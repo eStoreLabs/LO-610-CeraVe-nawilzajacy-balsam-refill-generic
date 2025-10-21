@@ -37,6 +37,7 @@
   margin-block: 16px;
 }
 #es-rc #es-rc-content .es-mobile {
+  width: 50%;
   display: block;
 }
 @container es-rc-content (min-width: 576px) {
@@ -552,6 +553,9 @@
   font-size: 24px;
 }
 #es-rc #es-rc-content .es-packaging__refill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 24px;
 }
 #es-rc #es-rc-content .es-packaging__refill img {
@@ -625,7 +629,7 @@
 }
 #es-rc #es-rc-content .es-cross__item__image {
   max-width: 170px;
-  padding: 24px;
+  padding: 32px;
   position: relative;
   z-index: 2;
   transition: all 0.3s ease-in-out;
@@ -701,7 +705,6 @@
     max-height: 92%;
     max-width: 200px;
     width: auto;
-    padding: 0;
   }
   #es-rc #es-rc-content .es-cross__item__image-container {
     width: 100%;
@@ -721,6 +724,8 @@
   }
 }
 #es-rc #es-rc-content .es-disclaimer {
+  font-weight: 400;
+  color: #003058;
   font-size: 11px;
   margin-block: 40px;
 }
