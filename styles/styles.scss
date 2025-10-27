@@ -36,7 +36,7 @@ $transition: all 0.3s ease-in-out;
   line-height: 1.25;
   color: $color-main;
   background-color: $color-bg;
-  max-width: 990px;
+  max-width: 1200px;
   margin: auto;
   container-type: inline-size;
   container-name: es-rc-content;
@@ -229,20 +229,20 @@ $transition: all 0.3s ease-in-out;
     flex-direction: column-reverse;
     color: $color-bg;
     &__wrapper {
-      margin: auto;
+      width: 100%;
       display: flex;
       flex-direction: column;
-    background-color: #0073ce;
-    padding: $px-XL;
+      background-color: #0073ce;
+      padding: 32px;
     }
     &__bg {
       width: 100%;
       display: flex;
       align-items: flex-end;
-      padding: 45px 25px 0 25px;
+      padding: 4% 4% 0 4%;
     }
     &__subtitle {
-      font-size: calc(1.12 * $fs-base);
+      font-size: 22px;
       margin-top: $px-L;
     }
     &__points {
@@ -258,9 +258,12 @@ $transition: all 0.3s ease-in-out;
         height: $fs-base;
         margin: 0;
       }
+      &__text {
+        font-size: 22px;
+      }
     }
     &__title {
-      font-size: 25px;
+      font-size: 32px;
     }
     &__badge {
       &Ctn {
@@ -281,8 +284,8 @@ $transition: all 0.3s ease-in-out;
         font-size: $fs-base;
         &--bold {
           text-align: center;
-          font-size: 25px;
-          line-height: 25px;
+          font-size: 32px;
+          line-height: 32px;
           font-weight: $fw-bold;
         }
       }
@@ -321,24 +324,26 @@ $transition: all 0.3s ease-in-out;
       }
       &__bg {
         width: 100%;
-        padding: 0 50px;
-      }
-      &__badge__text--bold {
-        line-height: 32px;
-        font-size: 32px;
-        text-align: center;
       }
     }
-    @container es-rc-content (min-width: 576px) {
+    @container es-rc-content (min-width: 768px) {
       flex-direction: row;
-      background: linear-gradient(64deg, #0073ce 66%, #fff 37%);
+      background: linear-gradient(64deg, #0073ce 60%, #fff 37%);
       &__title {
+        font-size: 40px;
         text-align: left;
         margin-top: 0;
       }
+      &__subtitle {
+        font-size: 28px;
+      }
+      &__points__text {
+        font-size: 25px;
+      }
       &__wrapper {
+        width: 81%;
+        padding: 130px 46px 130px 60px;
         background-color: transparent;
-        padding-left: 60px;
       }
       &__hand {
         &__container {
@@ -351,44 +356,12 @@ $transition: all 0.3s ease-in-out;
       }
       &__bg {
         width: 64%;
-        padding: 0;
       }
       &__badge__text--bold {
         text-align: left;
-      }
-    }
-    @container es-rc-content (min-width: 768px) {
-      &__title {
-        font-size: 32px;
-      }
-      &__subtitle {
-        font-size: 22px;
-      }
-      &__points {
-        font-size: $fs-base-md;
-      }
-      &__badge {
-        &Ctn {
-          max-width: 400px;
-          gap: 20px;
-        }
-        &__text {
-          font-size: 24px;
-        }
-      }
-      &__text {
-        font-size: 18.4px;
-        margin-top: 32px;
-      }
-      &__shape {
-        padding: 0 0 0 24px;
-        max-width: 305px;
-        &__text {
-          font-size: 14px;
-          &--number {
-            font-size: 48px;
-          }
-        }
+        line-height: 55px;
+        font-size: 55px;
+        font-weight: $fw-bold;
       }
     }
   }
@@ -541,15 +514,21 @@ $transition: all 0.3s ease-in-out;
     flex-direction: column;
     background: #fff;
 
-    &__name {font-size: 25px;}
-    &__text {font-size: 20px;}
+    &__name {
+      font-size: 32px;
+    }
+    &__text {
+      font-size: 22px;
+      text-align: justify;
+    }
     &__text-wrapper {
-      width: 90%;
+      width: 100%;
     }
     &__content {
+      padding: 32px;
       background-color: #0073ce;
       color: $color-bg;
-      padding: $px-L;
+
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -562,7 +541,6 @@ $transition: all 0.3s ease-in-out;
       margin-bottom: $px-L;
     }
     @container es-rc-content (min-width: 440px) {
-
       &__image {
         width: 100%;
       }
@@ -573,14 +551,25 @@ $transition: all 0.3s ease-in-out;
 
       &__content {
         width: 100%;
-        background-color: #0073ce;
       }
     }
-    @container es-rc-content (min-width: 576px) {
+    @container es-rc-content (min-width: 870px) {
       flex-direction: row;
-      background: linear-gradient(-118deg, #0073ce 67%, #fff 33%);
+      background: linear-gradient(58deg, #fff 41%, #0073ce 41%);
       &__name {
         text-align: left;
+      }
+      &__content {
+        background-color: transparent;
+      }
+      &__name {font-size: 25px;}
+      &__text {
+        width:91%;
+        font-size: 25px;
+        text-align: unset;
+      }
+      &__text-wrapper {
+        width: 89%;
       }
     }
   }

@@ -5,7 +5,7 @@
   line-height: 1.25;
   color: #003058;
   background-color: #ffffff;
-  max-width: 990px;
+  max-width: 1200px;
   margin: auto;
   container-type: inline-size;
   container-name: es-rc-content;
@@ -187,7 +187,7 @@
   color: #ffffff;
 }
 #es-rc #es-rc-content .es-features__wrapper {
-  margin: auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: #0073ce;
@@ -197,10 +197,10 @@
   width: 100%;
   display: flex;
   align-items: flex-end;
-  padding: 45px 25px 0 25px;
+  padding: 4% 4% 0 4%;
 }
 #es-rc #es-rc-content .es-features__subtitle {
-  font-size: 17.92px;
+  font-size: 22px;
   margin-top: 24px;
 }
 #es-rc #es-rc-content .es-features__points {
@@ -217,8 +217,11 @@
   height: 16px;
   margin: 0;
 }
+#es-rc #es-rc-content .es-features__points__text {
+  font-size: 22px;
+}
 #es-rc #es-rc-content .es-features__title {
-  font-size: 25px;
+  font-size: 32px;
 }
 #es-rc #es-rc-content .es-features__badgeCtn {
   display: flex;
@@ -239,8 +242,8 @@
 }
 #es-rc #es-rc-content .es-features__badge__text--bold {
   text-align: center;
-  font-size: 25px;
-  line-height: 25px;
+  font-size: 32px;
+  line-height: 32px;
   font-weight: 700;
 }
 #es-rc #es-rc-content .es-features__text {
@@ -271,26 +274,28 @@
   }
   #es-rc #es-rc-content .es-features__bg {
     width: 100%;
-    padding: 0 50px;
-  }
-  #es-rc #es-rc-content .es-features__badge__text--bold {
-    line-height: 32px;
-    font-size: 32px;
-    text-align: center;
   }
 }
-@container es-rc-content (min-width: 576px) {
+@container es-rc-content (min-width: 768px) {
   #es-rc #es-rc-content .es-features {
     flex-direction: row;
-    background: linear-gradient(64deg, #0073ce 66%, #fff 37%);
+    background: linear-gradient(64deg, #0073ce 60%, #fff 37%);
   }
   #es-rc #es-rc-content .es-features__title {
+    font-size: 40px;
     text-align: left;
     margin-top: 0;
   }
+  #es-rc #es-rc-content .es-features__subtitle {
+    font-size: 28px;
+  }
+  #es-rc #es-rc-content .es-features__points__text {
+    font-size: 25px;
+  }
   #es-rc #es-rc-content .es-features__wrapper {
+    width: 81%;
+    padding: 130px 46px 130px 60px;
     background-color: transparent;
-    padding-left: 60px;
   }
   #es-rc #es-rc-content .es-features__hand__container {
     position: static;
@@ -301,42 +306,12 @@
   }
   #es-rc #es-rc-content .es-features__bg {
     width: 64%;
-    padding: 0;
   }
   #es-rc #es-rc-content .es-features__badge__text--bold {
     text-align: left;
-  }
-}
-@container es-rc-content (min-width: 768px) {
-  #es-rc #es-rc-content .es-features__title {
-    font-size: 32px;
-  }
-  #es-rc #es-rc-content .es-features__subtitle {
-    font-size: 22px;
-  }
-  #es-rc #es-rc-content .es-features__points {
-    font-size: 20px;
-  }
-  #es-rc #es-rc-content .es-features__badgeCtn {
-    max-width: 400px;
-    gap: 20px;
-  }
-  #es-rc #es-rc-content .es-features__badge__text {
-    font-size: 24px;
-  }
-  #es-rc #es-rc-content .es-features__text {
-    font-size: 18.4px;
-    margin-top: 32px;
-  }
-  #es-rc #es-rc-content .es-features__shape {
-    padding: 0 0 0 24px;
-    max-width: 305px;
-  }
-  #es-rc #es-rc-content .es-features__shape__text {
-    font-size: 14px;
-  }
-  #es-rc #es-rc-content .es-features__shape__text--number {
-    font-size: 48px;
+    line-height: 55px;
+    font-size: 55px;
+    font-weight: 700;
   }
 }
 #es-rc #es-rc-content .es-ingredients {
@@ -484,18 +459,19 @@
   background: #fff;
 }
 #es-rc #es-rc-content .es-formula-use__name {
-  font-size: 25px;
+  font-size: 32px;
 }
 #es-rc #es-rc-content .es-formula-use__text {
-  font-size: 20px;
+  font-size: 22px;
+  text-align: justify;
 }
 #es-rc #es-rc-content .es-formula-use__text-wrapper {
-  width: 90%;
+  width: 100%;
 }
 #es-rc #es-rc-content .es-formula-use__content {
+  padding: 32px;
   background-color: #0073ce;
   color: #ffffff;
-  padding: 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -516,16 +492,29 @@
   }
   #es-rc #es-rc-content .es-formula-use__content {
     width: 100%;
-    background-color: #0073ce;
   }
 }
-@container es-rc-content (min-width: 576px) {
+@container es-rc-content (min-width: 870px) {
   #es-rc #es-rc-content .es-formula-use {
     flex-direction: row;
-    background: linear-gradient(-118deg, #0073ce 67%, #fff 33%);
+    background: linear-gradient(58deg, #fff 41%, #0073ce 41%);
   }
   #es-rc #es-rc-content .es-formula-use__name {
     text-align: left;
+  }
+  #es-rc #es-rc-content .es-formula-use__content {
+    background-color: transparent;
+  }
+  #es-rc #es-rc-content .es-formula-use__name {
+    font-size: 25px;
+  }
+  #es-rc #es-rc-content .es-formula-use__text {
+    width: 91%;
+    font-size: 25px;
+    text-align: unset;
+  }
+  #es-rc #es-rc-content .es-formula-use__text-wrapper {
+    width: 89%;
   }
 }
 #es-rc #es-rc-content .es-video__iframe {
