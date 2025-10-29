@@ -208,7 +208,7 @@ $transition: all 0.3s ease-in-out;
     }
     @container es-rc-content (min-width: 1000px) {
       &__right {
-        width: 68%;
+        width: 61%;
       }
     }
   }
@@ -317,7 +317,7 @@ $transition: all 0.3s ease-in-out;
     }
     @container es-rc-content (min-width: 768px) {
       flex-direction: row;
-      background: linear-gradient(64deg, #0073ce 60%, #fff 37%);
+      background: linear-gradient(70deg, #0073ce 62%, #fff 37%);
       &__title {
         font-size: 40px;
         text-align: left;
