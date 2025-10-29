@@ -150,7 +150,7 @@
     padding: 0;
   }
   #es-rc #es-rc-content .es-kv__left {
-    width: 52%;
+    width: 64%;
   }
 }
 @container es-rc-content (min-width: 780px) {
